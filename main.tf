@@ -1,8 +1,8 @@
 resource "aws_instance" "web" {
   ami           = "ami-0317b0f0a0144b137"
-  instance_type = "t3.small"
+  instance_type = "t3.micro"
 
   tags = {
-    Name = "tf-cicd-test"
+    Name = "tf-cicd-update"
   }
 }
